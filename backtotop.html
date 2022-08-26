@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth; 
+            /* ห้ามลืมใส่เด็ดขาด */
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size:8px;
+            /* ปรับขนาดตามความเหมาะสม */
+            height:50px;
+            width:50px;
+            /* z-indexเพื่อไม่ให้มีอะไรมาบังได้ */
+            z-index: 999;
+            background-color:red;
+            text-align:center;
+        }
+        .container {
+            background-color:blue;
+            height:100vh;
+        }
+    </style>
+
+</head>
+<!-- ใส่ idที่ body -->
+<body id="top">
+    <div style="height:100px ;background-color:pink;"></div>
+    <div class="back-to-top">
+        <!-- ใส่linkให้ตรงกับidที่ body -->
+        <a href="#top"><p>back<br>to<br>top</p></a>
+    </div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+</body>
+</html>
